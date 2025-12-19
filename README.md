@@ -1,8 +1,8 @@
 # LectureLedger
 
 A desktop application for managing and tracking university lectures, course materials, and study progress. Built with Python and Tkinter, LectureLedger helps students organize their learning schedule and keep track of completed lessons.
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](images/image.png)
+![alt text](images/image-1.png)
 
 ## Features
 
