@@ -33,7 +33,7 @@ def get_col(row: dict, *names):
     return ""
 
 def main():
-    csv_path = input('Percorso CSV (es. "lezioni_ingegneria_del_software.csv"): ').strip().strip('"')
+    csv_path = input('Percorso CSV: ').strip().strip('"')
     if not csv_path:
         print("Nessun CSV.")
         return
@@ -81,8 +81,6 @@ def main():
                 # Se vuoi mantenere la numerazione visibile nel titolo:
                 title_final = f"{numero}-{titolo}" if numero and not titolo.startswith(f"{numero}-") else titolo
 
-                # Se nel CSV non hai già reso univoco il titolo, puoi rafforzarlo col bbb_id:
-                # (nel nostro exporter JS l'ha già fatto, ma così sei a prova di errore)
                 if bbb_id and bbb_id not in title_final:
                     tail = bbb_id[-10:] if len(bbb_id) > 16 else bbb_id
                     title_final = f"{title_final} [{tail}]"
